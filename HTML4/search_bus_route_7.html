@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Search bus routes</h1>
+    <hr />
+    
+    <form action="success.html" method="post">
+        <table align="center" cellpadding="10" width="50%" border="2">
+            <tr>
+                <td>
+                    Source
+                </td>
+                <td>
+                    <input type="text" name="soiurce" required placeholder="Pickup point" />
+                </td>
+            </tr>
+            <tr>
+                <td>Destination</td>
+                <td>
+                    <input type='text' name='destination' required placeholder="Drop point" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Journey date
+                </td>
+                <td>
+                    <input type="date" name="journey_date" required min="2024-09-27" max="2024-10-27" />
+                </td>
+            </tr>
+            <tr>
+                <td>No of seats</td>
+                <td>
+                    <select name="seats" required>
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                        <option value="1">6</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Bus type</td>
+                <td>
+                    <label for="ac">
+                        <input id="ac" type="radio" name="bus_type" value="1" required /> AC
+                    </label>
+                    <label for="express">
+                        <input id="express" type="radio" name="bus_type" value="2" required /> Express
+                    </label>
+                    <label for="local">
+                        <input id="local" type="radio" name="bus_type" value="3" required /> Local
+                    </label>
+                    <label for="sleeper">
+                        <input id="sleeper" type="radio" name="bus_type" value="4" required /> Sleeper
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" value="Search bus" />
+                    <input type="reset" name="reset" value="clear all" />
+                </td>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1 align="center">Registration</h1>
+    <form action="login6.html" method="post" >
+            <table border="3" cellpadding="10" align="center" width="50%">
+                <tr>
+                    <td><label for="name"><b>Enter Your Name:</b></label></td>
+                    <td><input type="text" placeholder="Enter Your Name"  name="name" id="name" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="email"><b>Enter Your Email:</b></label></td>
+                    <td><input type="email" placeholder="Enter Your Email"  name="email" id="email" required/><br></td>
+                </tr>
+                <tr>
+                    <td><label for="contentno"><b>Enter Your Number:</b></label></td>
+                    <td><input type="text" placeholder="Enter Your Number"  name="contentno" id="contentno" required pattern="[0-9]{10}" /></td>
+                </tr>
+                <tr>
+                    <td><label for="password"><b>Enter Your Password:</b></label></td>
+                    <td><input type="password" placeholder="Enter Your Password"  name="password" id="password" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="rpassword"><b>Repeat Password:</b></label></td>
+                    <td><input type="password" placeholder="Repeat Password"  name="rpassword" id="rpassword" required/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" name="submit" value="login" />
+                        <input type="reset" name="reset" value="clear all" />
+                        <button type="submit">Submit</button>
+                        <button type="button" onclick="alert('Hello World!')">Alert Button</button>
+                        </td>
+                </tr>
+            </table>
+        <div align="center">
+            <p>Already have an account? <a href="login6.html">Sign in</a>.</p>
+        </div>
+    </form>
+</body>
+</html>
