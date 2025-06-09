@@ -1,5 +1,5 @@
 <?php 
-    //example of numeric array 
+    example of numeric array 
     $cars = array('Maruti','Audi','BMW','Ferrari','Toyota');
     $person[0] = "D Patel";
     
@@ -24,4 +24,7 @@
     $person[6] = 'Bhavnagar'; 
     echo "<hr/>";
     print_r($person);
+    $myarray=array(10,12,8=>80,4=>40,19,3=>30);
+    print_r($myarray);
 ?>
+
